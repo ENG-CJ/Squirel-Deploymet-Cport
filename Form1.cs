@@ -30,8 +30,12 @@ namespace Library
                 MessageBox.Show("we cant convert this data", "Title", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            
-            MessageBox.Show($"The num you eneted is "+num.ToString(), "Number displayer",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            var result = MessageBox.Show("Do you want to display the nummber", "confirm", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+            if(result == DialogResult.Yes)
+                      MessageBox.Show($"The num you eneted is "+num.ToString(), "Number displayer",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            else
+                MessageBox.Show($"You canceleted the displayer patch", "caqncel", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
         }
         private bool IsMajorUpdate(Version current, Version available)
         {
