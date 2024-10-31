@@ -162,3 +162,12 @@
 [31/10/24 08:55:19] info: DeltaPackageBuilder: \lib\net472\Squirrel.dll hasn't changed, writing dummy file
 [31/10/24 08:55:20] info: Program: Building embedded zip file for Setup.exe
 [31/10/24 08:55:21] info: Program: Finished Squirrel Updater
+[31/10/24 09:47:12] info: Program: Starting Squirrel Updater: --releasify Lib.1.0.0.nupkg
+[31/10/24 09:47:12] info: Program: Bootstrapper EXE found at:C:\Users\hp\source\repos\Library\packages\squirrel.windows.2.0.1\tools\Setup.exe
+[31/10/24 09:47:12] info: Program: Creating release package: C:\Users\hp\source\repos\Library\Releases\Lib.1.0.0.nupkg
+[31/10/24 09:47:12] info: ReleasePackage: Creating release package: C:\Users\hp\source\repos\Library\Releases\Lib.1.0.0.nupkg => C:\Users\hp\source\repos\Library\Releases\Lib-1.0.0-full.nupkg
+[31/10/24 09:47:13] info: ReleasePackage: Extracting dependent packages: []
+[31/10/24 09:47:13] info: ReleasePackage: Removing unnecessary data
+[31/10/24 09:47:13] info: ReleasePackage: No release notes found in C:\Users\hp\AppData\Local\SquirrelTemp\tempa\Lib.nuspec
+[31/10/24 09:47:13] info: Program: Building embedded zip file for Setup.exe
+[31/10/24 09:47:14] info: Program: Finished Squirrel Updater
