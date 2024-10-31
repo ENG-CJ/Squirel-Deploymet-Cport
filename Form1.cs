@@ -19,7 +19,18 @@ namespace Library
 
         private void button2_Click(object sender, EventArgs e)
         {
-            var  num = Convert.ToInt32(textBox1.Text);
+            if (textBox1.Text == "")
+            {
+                MessageBox.Show("You cant convert empty string to number","Title",MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            int num;
+            if(!int.TryParse(textBox1.Text, out num))
+            {
+                MessageBox.Show("we cant convert this data", "Title", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            
             MessageBox.Show(num.ToString());
         }
 
