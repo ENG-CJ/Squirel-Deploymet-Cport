@@ -51,6 +51,31 @@ namespace Library
                 MessageBox.Show($"Failed to update application: {ex.Message}", "Update Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private async void button3_Click(object sender, EventArgs e)
+        {
+            string updateUrl = "https://github.com/ENG-CJ/Squirel-Deploymet-Cport/releases/latest/download";
+            try
+            {
+                using (var manager = new UpdateManager(updateUrl))
+                {
+                    // Force pull the delta update without incrementing the version
+                    var release = await manager.UpdateApp();
+                    if (release != null)
+                    {
+                        MessageBox.Show("Bug fix applied successfully! Restart the application to complete the fix.", "Bug Fix Pulled", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("No bug fixes available.", "Up to Date", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Failed to pull bug fix: {ex.Message}", "Bug Fix Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
     
 }
