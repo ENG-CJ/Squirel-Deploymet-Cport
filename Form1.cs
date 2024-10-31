@@ -25,8 +25,9 @@ namespace Library
 
         private async void button1_Click(object sender, EventArgs e)
         {
-       
-            string updateUrl = "https://github.com/ENG-CJ/Job-Finder-App/releases";
+
+            string updateUrl = "https://github.com/ENG-CJ/Squirel-Deploymet-Cport/releases/latest/download";
+
 
             try
             {
