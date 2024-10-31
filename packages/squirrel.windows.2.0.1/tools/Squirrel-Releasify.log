@@ -194,3 +194,26 @@
 [31/10/24 09:58:34] info: DeltaPackageBuilder: \lib\net472\Squirrel.dll hasn't changed, writing dummy file
 [31/10/24 09:58:34] info: Program: Building embedded zip file for Setup.exe
 [31/10/24 09:58:35] info: Program: Finished Squirrel Updater
+[31/10/24 10:04:58] info: Program: Starting Squirrel Updater: --releasify Lib.2.0.0.nupkg
+[31/10/24 10:04:58] info: Program: Bootstrapper EXE found at:C:\Users\hp\source\repos\Library\packages\squirrel.windows.2.0.1\tools\Setup.exe
+[31/10/24 10:04:58] info: Program: Creating release package: C:\Users\hp\source\repos\Library\Releases\Lib.2.0.0.nupkg
+[31/10/24 10:04:58] info: ReleasePackage: Creating release package: C:\Users\hp\source\repos\Library\Releases\Lib.2.0.0.nupkg => C:\Users\hp\source\repos\Library\Releases\Lib-2.0.0-full.nupkg
+[31/10/24 10:04:58] info: ReleasePackage: Extracting dependent packages: []
+[31/10/24 10:04:58] info: ReleasePackage: Removing unnecessary data
+[31/10/24 10:04:58] info: ReleasePackage: No release notes found in C:\Users\hp\AppData\Local\SquirrelTemp\tempa\Lib.nuspec
+[31/10/24 10:04:59] info: DeltaPackageBuilder: Extracting .\Releases\Lib-1.0.1-full.nupkg and C:\Users\hp\source\repos\Library\Releases\Lib-2.0.0-full.nupkg into C:\Users\hp\AppData\Local\SquirrelTemp\tempb
+[31/10/24 10:04:59] info: DeltaPackageBuilder: \lib\net472\DeltaCompressionDotNet.dll hasn't changed, writing dummy file
+[31/10/24 10:04:59] info: DeltaPackageBuilder: \lib\net472\DeltaCompressionDotNet.MsDelta.dll hasn't changed, writing dummy file
+[31/10/24 10:04:59] info: DeltaPackageBuilder: \lib\net472\DeltaCompressionDotNet.PatchApi.dll hasn't changed, writing dummy file
+[31/10/24 10:04:59] info: DeltaPackageBuilder: Delta patching C:\Users\hp\AppData\Local\SquirrelTemp\tempa\lib\net472\Library.exe => C:\Users\hp\AppData\Local\SquirrelTemp\tempb\lib\net472\Library.exe
+[31/10/24 10:05:01] info: DeltaPackageBuilder: \lib\net472\Library.exe.config hasn't changed, writing dummy file
+[31/10/24 10:05:01] info: DeltaPackageBuilder: Delta patching C:\Users\hp\AppData\Local\SquirrelTemp\tempa\lib\net472\Library_ExecutionStub.exe => C:\Users\hp\AppData\Local\SquirrelTemp\tempb\lib\net472\Library_ExecutionStub.exe
+[31/10/24 10:05:01] info: DeltaPackageBuilder: \lib\net472\Mono.Cecil.dll hasn't changed, writing dummy file
+[31/10/24 10:05:01] info: DeltaPackageBuilder: \lib\net472\Mono.Cecil.Mdb.dll hasn't changed, writing dummy file
+[31/10/24 10:05:01] info: DeltaPackageBuilder: \lib\net472\Mono.Cecil.Pdb.dll hasn't changed, writing dummy file
+[31/10/24 10:05:01] info: DeltaPackageBuilder: \lib\net472\Mono.Cecil.Rocks.dll hasn't changed, writing dummy file
+[31/10/24 10:05:01] info: DeltaPackageBuilder: \lib\net472\NuGet.Squirrel.dll hasn't changed, writing dummy file
+[31/10/24 10:05:01] info: DeltaPackageBuilder: \lib\net472\SharpCompress.dll hasn't changed, writing dummy file
+[31/10/24 10:05:01] info: DeltaPackageBuilder: \lib\net472\Squirrel.dll hasn't changed, writing dummy file
+[31/10/24 10:05:02] info: Program: Building embedded zip file for Setup.exe
+[31/10/24 10:05:03] info: Program: Finished Squirrel Updater
