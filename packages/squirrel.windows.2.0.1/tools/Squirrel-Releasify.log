@@ -38,3 +38,26 @@
 [31/10/24 08:16:11] info: ReleasePackage: No release notes found in C:\Users\hp\AppData\Local\SquirrelTemp\tempa\Lib1.nuspec
 [31/10/24 08:16:11] info: Program: Building embedded zip file for Setup.exe
 [31/10/24 08:16:12] info: Program: Finished Squirrel Updater
+[31/10/24 08:23:38] info: Program: Starting Squirrel Updater: --releasify Lib2.1.0.1.nupkg
+[31/10/24 08:23:38] info: Program: Bootstrapper EXE found at:C:\Users\hp\source\repos\Library\packages\squirrel.windows.2.0.1\tools\Setup.exe
+[31/10/24 08:23:38] info: Program: Creating release package: C:\Users\hp\source\repos\Library\Releases\Lib2.1.0.1.nupkg
+[31/10/24 08:23:38] info: ReleasePackage: Creating release package: C:\Users\hp\source\repos\Library\Releases\Lib2.1.0.1.nupkg => C:\Users\hp\source\repos\Library\Releases\Lib2-1.0.1-full.nupkg
+[31/10/24 08:23:38] info: ReleasePackage: Extracting dependent packages: []
+[31/10/24 08:23:38] info: ReleasePackage: Removing unnecessary data
+[31/10/24 08:23:38] info: ReleasePackage: No release notes found in C:\Users\hp\AppData\Local\SquirrelTemp\tempa\Lib2.nuspec
+[31/10/24 08:23:38] info: DeltaPackageBuilder: Extracting .\Releases\Lib1-1.0.0-full.nupkg and C:\Users\hp\source\repos\Library\Releases\Lib2-1.0.1-full.nupkg into C:\Users\hp\AppData\Local\SquirrelTemp\tempb
+[31/10/24 08:23:38] info: DeltaPackageBuilder: \lib\net472\DeltaCompressionDotNet.dll not found in base package, marking as new
+[31/10/24 08:23:38] info: DeltaPackageBuilder: \lib\net472\DeltaCompressionDotNet.MsDelta.dll not found in base package, marking as new
+[31/10/24 08:23:38] info: DeltaPackageBuilder: \lib\net472\DeltaCompressionDotNet.PatchApi.dll not found in base package, marking as new
+[31/10/24 08:23:38] info: DeltaPackageBuilder: \lib\net472\Library.exe not found in base package, marking as new
+[31/10/24 08:23:38] info: DeltaPackageBuilder: \lib\net472\Library.exe.config not found in base package, marking as new
+[31/10/24 08:23:38] info: DeltaPackageBuilder: \lib\net472\Library_ExecutionStub.exe not found in base package, marking as new
+[31/10/24 08:23:38] info: DeltaPackageBuilder: \lib\net472\Mono.Cecil.dll not found in base package, marking as new
+[31/10/24 08:23:38] info: DeltaPackageBuilder: \lib\net472\Mono.Cecil.Mdb.dll not found in base package, marking as new
+[31/10/24 08:23:38] info: DeltaPackageBuilder: \lib\net472\Mono.Cecil.Pdb.dll not found in base package, marking as new
+[31/10/24 08:23:38] info: DeltaPackageBuilder: \lib\net472\Mono.Cecil.Rocks.dll not found in base package, marking as new
+[31/10/24 08:23:38] info: DeltaPackageBuilder: \lib\net472\NuGet.Squirrel.dll not found in base package, marking as new
+[31/10/24 08:23:38] info: DeltaPackageBuilder: \lib\net472\SharpCompress.dll not found in base package, marking as new
+[31/10/24 08:23:38] info: DeltaPackageBuilder: \lib\net472\Squirrel.dll not found in base package, marking as new
+[31/10/24 08:23:38] info: Program: Building embedded zip file for Setup.exe
+[31/10/24 08:23:39] info: Program: Finished Squirrel Updater
