@@ -33,23 +33,44 @@ namespace Library
             
             MessageBox.Show($"The num you eneted is "+num.ToString(), "Number displayer",MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
+        private bool IsMajorUpdate(Version current, Version available)
+        {
+            // Check if there is a major version difference
+            return available.Major > current.Major;
+        }
+
+        private bool IsPatchUpdate(Version current, Version available)
+        {
+            // Check if there is a patch-level update (same major, same minor, different patch)
+            return available.Major == current.Major && available.Minor == current.Minor && available.Build > current.Build;
+        }
 
         private async void button1_Click(object sender, EventArgs e)
         {
 
             string updateUrl = "https://github.com/ENG-CJ/Squirel-Deploymet-Cport/releases/latest/download";
-
+            Version currentVersion = new Version(Application.ProductVersion);
 
             try
             {
                 using (var manager = new UpdateManager(updateUrl))
                 {
-                    // Check for updates
-                    var release = await manager.UpdateApp();
-
-                    if (release != null)
+                    var updateInfo = await manager.CheckForUpdate();
+                    if (updateInfo.ReleasesToApply.Count > 0)
                     {
-                        MessageBox.Show("Update applied successfully! Restart the application to complete the update.", "Update Available", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        // Get the latest available version
+                        Version availableVersion = updateInfo.FutureReleaseEntry.Version.Version;
+
+                        // Check if it's a major update
+                        if (IsMajorUpdate(currentVersion, availableVersion))
+                        {
+                            await manager.UpdateApp();
+                            MessageBox.Show("Major update applied successfully! Restart the application to complete the update.", "Update Available", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("No major updates available.", "Up to Date", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
                     }
                     else
                     {
@@ -66,15 +87,28 @@ namespace Library
         private async void button3_Click(object sender, EventArgs e)
         {
             string updateUrl = "https://github.com/ENG-CJ/Squirel-Deploymet-Cport/releases/latest/download";
+            Version currentVersion = new Version(Application.ProductVersion);
+
             try
             {
                 using (var manager = new UpdateManager(updateUrl))
                 {
-                    // Force pull the delta update without incrementing the version
-                    var release = await manager.UpdateApp();
-                    if (release != null)
+                    var updateInfo = await manager.CheckForUpdate();
+                    if (updateInfo.ReleasesToApply.Count > 0)
                     {
-                        MessageBox.Show("Bug fix applied successfully! Restart the application to complete the fix.", "Bug Fix Pulled", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        // Get the latest available version
+                        Version availableVersion = updateInfo.FutureReleaseEntry.Version.Version;
+
+                        // Check if it's a patch update
+                        if (IsPatchUpdate(currentVersion, availableVersion))
+                        {
+                            await manager.UpdateApp();
+                            MessageBox.Show("Bug fix applied successfully! Restart the application to complete the fix.", "Bug Fix Pulled", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("No new bug fixes available.", "Up to Date", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
                     }
                     else
                     {

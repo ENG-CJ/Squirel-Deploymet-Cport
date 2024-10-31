@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Library")]
-[assembly: AssemblyDescription("This is lib")]
+[assembly: AssemblyDescription("This is 1st lib system")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("11")]
+[assembly: AssemblyCompany("ENG-CJ")]
 [assembly: AssemblyProduct("Library")]
 [assembly: AssemblyCopyright("Copyright ©  2024")]
 [assembly: AssemblyTrademark("")]
