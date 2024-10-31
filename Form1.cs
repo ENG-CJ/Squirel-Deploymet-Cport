@@ -31,7 +31,7 @@ namespace Library
                 return;
             }
             
-            MessageBox.Show(num.ToString());
+            MessageBox.Show($"The num you eneted is "+num.ToString(), "Number displayer",MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
 
         private async void button1_Click(object sender, EventArgs e)
