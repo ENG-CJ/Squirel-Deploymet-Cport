@@ -217,3 +217,35 @@
 [31/10/24 10:05:01] info: DeltaPackageBuilder: \lib\net472\Squirrel.dll hasn't changed, writing dummy file
 [31/10/24 10:05:02] info: Program: Building embedded zip file for Setup.exe
 [31/10/24 10:05:03] info: Program: Finished Squirrel Updater
+[03/11/24 17:27:10] info: Program: Starting Squirrel Updater: --releasify Lib3.0.0.nupkg
+[03/11/24 17:27:10] info: Program: Bootstrapper EXE found at:C:\Users\hp\source\repos\Library\packages\squirrel.windows.2.0.1\tools\Setup.exe
+[03/11/24 17:27:10] fatal: Finished with unhandled exception: System.IO.FileNotFoundException: Could not find file 'Lib3.0.0.nupkg'.
+File name: 'Lib3.0.0.nupkg'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   at Squirrel.Update.Program.Releasify(String package, String targetDir, String packagesDir, String bootstrapperExe, String backgroundGif, String signingOpts, String baseUrl, String setupIcon, Boolean generateMsi, Boolean packageAs64Bit, String frameworkVersion, Boolean generateDeltas)
+   at Squirrel.Update.Program.executeCommandLine(String[] args)
+   at Squirrel.Update.Program.main(String[] args)
+[03/11/24 17:27:27] info: Program: Starting Squirrel Updater: --releasify Lib.3.0.0.nupkg
+[03/11/24 17:27:27] info: Program: Bootstrapper EXE found at:C:\Users\hp\source\repos\Library\packages\squirrel.windows.2.0.1\tools\Setup.exe
+[03/11/24 17:27:27] info: Program: Creating release package: C:\Users\hp\source\repos\Library\Releases\Lib.3.0.0.nupkg
+[03/11/24 17:27:27] info: ReleasePackage: Creating release package: C:\Users\hp\source\repos\Library\Releases\Lib.3.0.0.nupkg => C:\Users\hp\source\repos\Library\Releases\Lib-3.0.0-full.nupkg
+[03/11/24 17:27:27] info: ReleasePackage: Extracting dependent packages: []
+[03/11/24 17:27:27] info: ReleasePackage: Removing unnecessary data
+[03/11/24 17:27:27] info: ReleasePackage: No release notes found in C:\Users\hp\AppData\Local\SquirrelTemp\tempa\Lib.nuspec
+[03/11/24 17:27:28] info: DeltaPackageBuilder: Extracting .\Releases\Lib-2.0.0-full.nupkg and C:\Users\hp\source\repos\Library\Releases\Lib-3.0.0-full.nupkg into C:\Users\hp\AppData\Local\SquirrelTemp\tempb
+[03/11/24 17:27:28] info: DeltaPackageBuilder: \lib\net472\DeltaCompressionDotNet.dll hasn't changed, writing dummy file
+[03/11/24 17:27:28] info: DeltaPackageBuilder: \lib\net472\DeltaCompressionDotNet.MsDelta.dll hasn't changed, writing dummy file
+[03/11/24 17:27:28] info: DeltaPackageBuilder: \lib\net472\DeltaCompressionDotNet.PatchApi.dll hasn't changed, writing dummy file
+[03/11/24 17:27:28] info: DeltaPackageBuilder: Delta patching C:\Users\hp\AppData\Local\SquirrelTemp\tempa\lib\net472\Library.exe => C:\Users\hp\AppData\Local\SquirrelTemp\tempb\lib\net472\Library.exe
+[03/11/24 17:27:31] info: DeltaPackageBuilder: \lib\net472\Library.exe.config hasn't changed, writing dummy file
+[03/11/24 17:27:31] info: DeltaPackageBuilder: Delta patching C:\Users\hp\AppData\Local\SquirrelTemp\tempa\lib\net472\Library_ExecutionStub.exe => C:\Users\hp\AppData\Local\SquirrelTemp\tempb\lib\net472\Library_ExecutionStub.exe
+[03/11/24 17:27:31] info: DeltaPackageBuilder: \lib\net472\Mono.Cecil.dll hasn't changed, writing dummy file
+[03/11/24 17:27:31] info: DeltaPackageBuilder: \lib\net472\Mono.Cecil.Mdb.dll hasn't changed, writing dummy file
+[03/11/24 17:27:31] info: DeltaPackageBuilder: \lib\net472\Mono.Cecil.Pdb.dll hasn't changed, writing dummy file
+[03/11/24 17:27:31] info: DeltaPackageBuilder: \lib\net472\Mono.Cecil.Rocks.dll hasn't changed, writing dummy file
+[03/11/24 17:27:31] info: DeltaPackageBuilder: \lib\net472\NuGet.Squirrel.dll hasn't changed, writing dummy file
+[03/11/24 17:27:31] info: DeltaPackageBuilder: \lib\net472\SharpCompress.dll hasn't changed, writing dummy file
+[03/11/24 17:27:31] info: DeltaPackageBuilder: \lib\net472\Squirrel.dll hasn't changed, writing dummy file
+[03/11/24 17:27:31] info: Program: Building embedded zip file for Setup.exe
+[03/11/24 17:27:34] info: Program: Finished Squirrel Updater
